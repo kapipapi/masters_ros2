@@ -1,0 +1,3 @@
+sensor_msgs/msg/Image input_image
+---
+std_msgs/msg/String[] object_names
