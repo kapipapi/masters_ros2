@@ -20,7 +20,7 @@ public:
       std::bind(&ObjectDetectionServer::handle_service, this, _1, _2)
     );
     // Initialize YOLOv3 model
-    net = cv::dnn::readNet("/path/to/yolov3.weights", "/path/to/yolov3.cfg");
+    net = cv::dnn::readNet("/home/lab218/Downloads/yolov3.weights", "/home/lab218/Downloads/yolov3.cfg");
     net.setPreferableBackend(cv::dnn::DNN_BACKEND_OPENCV);
     net.setPreferableTarget(cv::dnn::DNN_TARGET_CPU);
   }
